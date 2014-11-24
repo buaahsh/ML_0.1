@@ -19,7 +19,7 @@ def ConvertFeature(item):
     s.append(str(float(tokens[0])/float(tokens[1])))
     s.append(str(float(tokens[1])/float(tokens[0])))
     s.append(str(float(tokens[1])/(float(tokens[0])**2/10000)))
-    s.append(str(float(tokens[1])*float(tokens[0])))
+    s.append(str(float(tokens[1])*float(tokens[0])/100))
     ss = " ".join(s)
     if tokens[2].lower() == "f":
         return "1 " + ss
@@ -28,4 +28,4 @@ def ConvertFeature(item):
 
 
 if __name__ == "__main__":
-    ExtractFeature("./data/dataset2.txt","./data/dataset2.feature" )
+    ExtractFeature("./data/dataset2.txt","./data/dataset2.v1.feature" )
