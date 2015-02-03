@@ -1,0 +1,9 @@
+v1:
+只利用前两学期的成绩，加和排序，得到0.75160
+
+v2:
+Grade Normalize / average
+1-91 -> [0,1]
+
+5 features
+1_g, 2_g, 1_l, 2_l, 3_l, 3_g
